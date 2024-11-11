@@ -20,9 +20,8 @@ export const PeoplePage = () => {
           setErrorMessage('');
         }
       })
-      .catch(error => {
+      .catch(() => {
         setErrorMessage('Something went wrong');
-        throw error;
       })
       .finally(() => {
         setLoader(false);
